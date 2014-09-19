@@ -1,0 +1,11 @@
+%{
+
+#include "y.tab.h"
+
+%}
+
+%%
+[a]	{ return A;}
+[a]	{ return B;}
+.|\n	{ return 0;}
+%%

@@ -1,0 +1,17 @@
+%{
+ #include <stdio.h>
+%}
+%token a b
+%%
+S : b A
+A : a A |
+%%
+
+int main(){
+	if(!yyparse()) printf("Valid string ... \n"); 
+}
+
+int yyerror(){
+	printf("Does not satisfy grammar");
+	return 0;
+}

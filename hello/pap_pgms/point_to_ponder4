@@ -1,0 +1,30 @@
+1. what is the basic difference between map and filter?
+   which function whould you use in the following cases?
+   find all numbers divisible by 5 in a list
+   given a list of tuples containing name and marks, find who have got
+        about 90%
+   given a list of tuples containing name and marks, indicate the grade
+        of passing
+   given a list of strings, display only palindromes
+   
+
+2. Given a list of numbers, write a program to find
+   a) the number with the highest unit digit
+   b) all 3 digit numbers whose first and last digits are same
+   c) all two digit numbers
+   d) the smallest number
+  
+3. walk thro a directory and find
+   a) all files/directories  which have changed in the last one day
+   b) all executable files
+   c) files whose sizes are less than 1K bytes
+   d) all files whose names have extension .py
+
+4. can we support :
+   a) values for a key in a dict based on a partial key?
+   b) tuple containing lists. can these lists be changed ? append ? del ?
+   c) lists containing tuples. can these tuples be changed ? add element?
+      del ?
+   d) a = "pesit"; a.upper(); print(a); what do we get and why?
+
+   

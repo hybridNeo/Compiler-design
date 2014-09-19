@@ -1,0 +1,29 @@
+1. create a list of strings. sort them based on
+   a) lexicographic order
+   b) case insensitive comparison
+   c) length of the string in decreasing order
+   check documentation of list.sort
+
+2. Given a file containing 
+   country:state:city:place,
+   create a suitable data structure.
+   dict of dict of dict of list ?
+
+3. Given a file containing date(dd/mm/yy) and detail,
+   create a list of dict to hold these details.
+   sort them in chronological order.
+
+4. Given two files containing strings( could be names of places),
+   find which strings are common to both the files,
+   which are unique in each file.
+
+5. walk thro a 'C' program, find the number of
+   if
+   else
+   while
+   do
+   for
+   in the program.
+
+
+

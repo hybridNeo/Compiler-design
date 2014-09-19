@@ -1,0 +1,43 @@
+- while programming in Python (for that, any language), 
+  understand its philosophy
+- do not write 'C' programs in Python
+- remember division of int in Python3.x gives a float result
+- in 'C', check the concept of sequence point, evaluation of operands
+  and operators
+
+Questions:
+1. What is the concept of iterable? list is iterable. range object is also
+   iterable. What is the difference?
+2. When do we increase the indentation? When do we decrease the indentation?
+3. In a for loop, is the loop variable a copy of the element of the iterable
+   or it is a reference to element of the iterable?
+4. can we say  3 in range(5) ? How would in operator work?
+5. How do we reverse 
+   a string?
+   a list?  
+6. what could 
+   a, b = b, a
+   mean? what if a, b are simple type variables? what if a and b are
+   of different type? what if a and b are of reference type?
+7. what could this mean ?
+   while ... :
+   	...
+   else:
+	...
+
+8. what is the difference?
+   a = [1, 2, 3, 4, 5]
+   b = a
+   c = a[:]
+
+9. a = [10, 20, 30, 40, 60, 70, 80]
+   i = 4
+   x = 50
+   How to insert x in posn i in list a ?
+   (one line code!)
+
+10. What happens?
+    a = "PESIT"
+    a.upper()
+    print(a)
+ 

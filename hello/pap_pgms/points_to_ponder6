@@ -1,0 +1,14 @@
+functions : introduction
+1. can we create a list of function names? can we traverse this
+   list and apply these functions one after another to a 
+   given arg ?
+2. can we define the fn more than once ? what happens if we call
+   such function?
+3. can a function have more than one nested function ?
+4. can a function return a list of nested functions ?
+5. can we undecorate a decorated fn? get back the old function?
+
+Topics covered today require a bit of reading and experimenting.
+Look at python visualizers to help understand what happens at
+runtime in Python. Donot compare with the C runtime model.
+

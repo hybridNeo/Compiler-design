@@ -1,0 +1,30 @@
+1. What is the difference between value type and reference type?
+   What is the difference between assigning to an element of
+       the reference type and assigning to a variable of reference type?
+
+2. What is short ckt evaluation? Is this applicable in bitwise operators?
+
+3. How do we test whether the ith bit is 1? How do we set the ith
+   bit? How do we clear the ith bit?
+
+4. check whether a given number in binary is an exact power of 2.
+   No loops!!
+
+5. What does this expression  n & ~(n - 1) do?
+
+6. why does a = (b = 10) give an error in Python ?
+
+7. What happens if an uninitialized variable is used? compile time
+   error or runtime error or default initial value?
+
+8. what is backward compatibility? does python 3.x support programs 
+   written in 2.x? can we convert from 2.x to 3.x or 3.x to 2.x? 
+   are their any tools to do such conversions?
+
+9. should python program file have an extension .py ?
+
+10. can we apply type function to result of type? can we check type 
+    and id of print? can we check type of id and id of type?
+
+
+

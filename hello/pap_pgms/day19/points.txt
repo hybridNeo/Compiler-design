@@ -1,0 +1,67 @@
+threads and processes:
+
+process:program in a state of execution
+linker produces image => loader loads the image to create a process
+=> process corresponds to a virtual address space
+=> has text segment, data segment, stack and heap
+=> has environmental variables
+=> has some area used by the kernel : uarea
+=> has at least one thread
+=> is a place holder for threads
+=> what executes is a thread
+
+thread:
+=> thread of execution(sequence of instructions being executed)
+=> exists in the context of a process
+
+create a thread :
+call a thread fn asynchroneously
+or have a wrapper to start the thread fn
+
+cancel a thread:
+wait for a thread:
+
+wait for all threads :  barrier
+no hierarchy in the thread model
+
+shd take care of (when there is contention for the resource)
+- racing
+- deadlock
+- indefinite wait
+=> synchronization
+	mutex
+		has ownership
+		only that thread which locks a mutex can release it
+	conditional variable
+	semaphore
+		resource counting
+		can be used for mutual exclusion
+	
+=> shared bet threads:
+	image is same
+	text is shared(all fns)
+	data (global variables) shared
+	heap (dynamic variable) 
+	stack is not shared
+		each thread can call fns in any order
+		shd return in the LIFO order
+	context of execution (registers) not shared
+	tls : thread local storage
+	bind a variable to the thread so that it can be accessed
+		anywhere the thread is executing
+
+commn bet processes:
+	messages, shared memory, memory map(mmap)
+
+commn bet threads:
+	global variables, heap variables
+	(not in Python) : signals
+
+
+
+
+
+
+
+
+

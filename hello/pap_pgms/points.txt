@@ -1,0 +1,8 @@
+# con.autocommit_mode
+# con.autocommit(True)
+# help(con.cursor)
+# help(con.cursor())
+<class 'pymysql.connections.Connection'>
+# cur.rowcount
+# cur.fetchone()
+# cur.description

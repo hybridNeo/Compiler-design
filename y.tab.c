@@ -62,9 +62,9 @@
 
 
 /* Copy the first part of user declarations.  */
-#line 1 "./y4.y" /* yacc.c:339  */
+#line 1 "y5.y" /* yacc.c:339  */
 
-#include <stdio.h>
+ #include <stdio.h>
 
 #line 70 "y.tab.c" /* yacc.c:339  */
 
@@ -101,15 +101,13 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    a = 258,
-    b = 259,
-    c = 260
+    A = 258,
+    B = 259
   };
 #endif
 /* Tokens.  */
-#define a 258
-#define b 259
-#define c 260
+#define A 258
+#define B 259
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
@@ -127,7 +125,7 @@ int yyparse (void);
 
 /* Copy the second part of user declarations.  */
 
-#line 131 "y.tab.c" /* yacc.c:358  */
+#line 129 "y.tab.c" /* yacc.c:358  */
 
 #ifdef short
 # undef short
@@ -369,21 +367,21 @@ union yyalloc
 /* YYFINAL -- State number of the termination state.  */
 #define YYFINAL  5
 /* YYLAST -- Last index in YYTABLE.  */
-#define YYLAST   9
+#define YYLAST   3
 
 /* YYNTOKENS -- Number of terminals.  */
-#define YYNTOKENS  6
+#define YYNTOKENS  5
 /* YYNNTS -- Number of nonterminals.  */
-#define YYNNTS  5
+#define YYNNTS  3
 /* YYNRULES -- Number of rules.  */
-#define YYNRULES  8
+#define YYNRULES  4
 /* YYNSTATES -- Number of states.  */
-#define YYNSTATES  11
+#define YYNSTATES  7
 
 /* YYTRANSLATE[YYX] -- Symbol number corresponding to YYX as returned
    by yylex, with out-of-bounds checking.  */
 #define YYUNDEFTOK  2
-#define YYMAXUTOK   260
+#define YYMAXUTOK   259
 
 #define YYTRANSLATE(YYX)                                                \
   ((unsigned int) (YYX) <= YYMAXUTOK ? yytranslate[YYX] : YYUNDEFTOK)
@@ -417,15 +415,14 @@ static const yytype_uint8 yytranslate[] =
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
        2,     2,     2,     2,     2,     2,     2,     2,     2,     2,
-       2,     2,     2,     2,     2,     2,     1,     2,     3,     4,
-       5
+       2,     2,     2,     2,     2,     2,     1,     2,     3,     4
 };
 
 #if YYDEBUG
   /* YYRLINE[YYN] -- Source line where rule number YYN was defined.  */
 static const yytype_uint8 yyrline[] =
 {
-       0,     6,     6,     7,     7,     8,     8,     9,    10
+       0,     6,     6,     7,     7
 };
 #endif
 
@@ -434,8 +431,7 @@ static const yytype_uint8 yyrline[] =
    First, the terminals, then, starting at YYNTOKENS, nonterminals.  */
 static const char *const yytname[] =
 {
-  "$end", "error", "$undefined", "a", "b", "c", "$accept", "S", "A", "B",
-  "C", YY_NULLPTR
+  "$end", "error", "$undefined", "A", "B", "$accept", "S", "T", YY_NULLPTR
 };
 #endif
 
@@ -444,16 +440,16 @@ static const char *const yytname[] =
    (internal) symbol number NUM (which must be that of a token).  */
 static const yytype_uint16 yytoknum[] =
 {
-       0,   256,   257,   258,   259,   260
+       0,   256,   257,   258,   259
 };
 # endif
 
-#define YYPACT_NINF -4
+#define YYPACT_NINF -5
 
 #define yypact_value_is_default(Yystate) \
-  (!!((Yystate) == (-4)))
+  (!!((Yystate) == (-5)))
 
-#define YYTABLE_NINF -9
+#define YYTABLE_NINF -1
 
 #define yytable_value_is_error(Yytable_value) \
   0
@@ -462,8 +458,7 @@ static const yytype_uint16 yytoknum[] =
      STATE-NUM.  */
 static const yytype_int8 yypact[] =
 {
-      -3,    -4,     2,    -2,     1,    -4,    -3,    -4,    -4,     3,
-      -4
+      -4,    -2,     2,    -2,    -5,    -5,    -5
 };
 
   /* YYDEFACT[STATE-NUM] -- Default reduction number in state STATE-NUM.
@@ -471,53 +466,51 @@ static const yytype_int8 yypact[] =
      means the default is an error.  */
 static const yytype_uint8 yydefact[] =
 {
-       4,     7,     0,     6,     0,     1,     4,     2,     3,     8,
-       5
+       0,     4,     0,     4,     2,     1,     3
 };
 
   /* YYPGOTO[NTERM-NUM].  */
 static const yytype_int8 yypgoto[] =
 {
-      -4,    -4,    -1,    -4,     0
+      -5,    -5,     0
 };
 
   /* YYDEFGOTO[NTERM-NUM].  */
 static const yytype_int8 yydefgoto[] =
 {
-      -1,     2,     3,     7,     4
+      -1,     2,     4
 };
 
   /* YYTABLE[YYPACT[STATE-NUM]] -- What to do in state STATE-NUM.  If
      positive, shift that token.  If negative, reduce the rule whose
      number is the opposite.  If YYTABLE_NINF, syntax error.  */
-static const yytype_int8 yytable[] =
+static const yytype_uint8 yytable[] =
 {
-      -8,     1,     5,     6,     8,     9,     0,     1,     0,    10
+       1,     3,     5,     6
 };
 
-static const yytype_int8 yycheck[] =
+static const yytype_uint8 yycheck[] =
 {
-       3,     4,     0,     5,     3,     6,    -1,     4,    -1,     9
+       4,     3,     0,     3
 };
 
   /* YYSTOS[STATE-NUM] -- The (internal number of the) accessing
      symbol of state STATE-NUM.  */
 static const yytype_uint8 yystos[] =
 {
-       0,     4,     7,     8,    10,     0,     5,     9,     3,     8,
-      10
+       0,     4,     6,     3,     7,     0,     7
 };
 
   /* YYR1[YYN] -- Symbol number of symbol that rule YYN derives.  */
 static const yytype_uint8 yyr1[] =
 {
-       0,     6,     7,     8,     8,     9,     9,    10,    10
+       0,     5,     6,     7,     7
 };
 
   /* YYR2[YYN] -- Number of symbols on the right hand side of rule YYN.  */
 static const yytype_uint8 yyr2[] =
 {
-       0,     2,     2,     2,     0,     3,     0,     1,     0
+       0,     2,     2,     2,     0
 };
 
 
@@ -1194,7 +1187,7 @@ yyreduce:
   switch (yyn)
     {
       
-#line 1198 "y.tab.c" /* yacc.c:1646  */
+#line 1191 "y.tab.c" /* yacc.c:1646  */
       default: break;
     }
   /* User semantic actions sometimes alter yychar, and that requires
@@ -1422,29 +1415,14 @@ yyreturn:
 #endif
   return yyresult;
 }
-#line 12 "./y4.y" /* yacc.c:1906  */
+#line 8 "y5.y" /* yacc.c:1906  */
 
-int yylex(){
-	char ch;
-	ch = getchar();
-	if(ch =='a')
-		return a;
-	else if(ch == 'b')
-		return b;
-	else if(ch == 'c')
-		return c;
-	else if(ch == '\n')
-		return 0;
-		
+
+int main(){
+	if(!yyparse()) printf("Valid string ... \n"); 
 }
-int main()
-{	
-	if(!yyparse())printf("It is a valid String\n");
 
-
-}
 int yyerror(){
-	printf("It is not valid \n");
+	printf("Does not satisfy grammar");
 	return 0;
-
 }
