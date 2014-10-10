@@ -11,7 +11,7 @@ S : S a
 
 int yylex(){
 	char ch;
-	ch = getchar();
+	while ( ( ch = getchar() ) == '  ' );       
 	if(ch=='a')
 		return a;
 	else

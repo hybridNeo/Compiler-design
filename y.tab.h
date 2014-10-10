@@ -45,13 +45,13 @@ extern int yydebug;
 # define YYTOKENTYPE
   enum yytokentype
   {
-    A = 258,
-    B = 259
+    num = 258,
+    let = 259
   };
 #endif
 /* Tokens.  */
-#define A 258
-#define B 259
+#define num 258
+#define let 259
 
 /* Value type.  */
 #if ! defined YYSTYPE && ! defined YYSTYPE_IS_DECLARED
